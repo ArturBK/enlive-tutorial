@@ -1,40 +1,18 @@
-(load "tutorial/scrape1")
-*base-url*
-"https://news.ycombinator.com/"
-*base-url*
-(in-ns 'tutorial.scrape1)
-*base-url*
-(hn-headlines)
-(load "scrape3")
-(in-ns 'tutorial.scrape3)
-(print-stories)
-(load "template1")
-(in-ns 'tutorial.template1)
-(load "template1")
-(in-ns 'tutorial.template1)
-(use 'ring.adapter.jetty)
-(in-ns 'tutorial.template2)
-(in-ns 'tutorial.template1)
-(html/content (:message ctxt))
-(html/content ('asdasdasd'))
-(html/content ("asdasdasd"))
-(html/deftemplate index "tutorial/template1.html"
-  [ctxt]
-  [:p#message] (fn [match]
-                 (if-let [msg (:message ctxt)]
-                   ((html/content msg) match)
-                   ((html/content "Nothing to see here!") match))))
-(in-ns 'tutorial.template2)
-(.stop *server*)
-*server*
-(in-ns 'tutorial.template2)
-(load "template1")
-(in-ns 'tutorial.scrape3)
-(load "template1")
-(in-ns 'tutorial.template1)
 (load "tutorial/template1")
 (in-ns 'tutorial.template1)
-(html/content (:message ctxt))
-(.stop *server*)
-(load "tutorial/template2")
-(load "template2")
+(load "tutorial/scrape1")
+(in-ns 'tutorial.template1)
+(in-ns 'tutorial.scrape1)
+first-menu-item
+(first-menu-item)
+(print-headlines-and-points)
+*base-url*
+(load "tutorial/scrape1")
+(in-ns 'tutorial.scrape1)
+*base-url*
+(load "tutorial/scrape1")
+(in-ns 'tutorial.scrape1)
+*base-url*
+(load "tutorial/scrape1")
+(in-ns 'tutorial.scrape1)
+*base-url*
